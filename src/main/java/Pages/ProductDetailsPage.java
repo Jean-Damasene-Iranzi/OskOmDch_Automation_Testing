@@ -9,14 +9,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class SingleProductPage {
+public class ProductDetailsPage {
     private WebDriver driver;
     private By addToCartButton = By.name("add-to-cart");
     private By checkoutIcon = By.className("count");
     private By checkoutButton = By.xpath("//*[@id=\"ast-site-header-cart\"]/div[2]/div/div/p[2]/a[2]");
 
 
-    public SingleProductPage(WebDriver driver){
+    public ProductDetailsPage(WebDriver driver){
         this.driver = driver;
     }
 

@@ -21,9 +21,9 @@ public class HomePage {
         return new DropdownPage(driver);
     }
 
-    public SingleProductPage clickSingleProduct(){
+    public ProductDetailsPage clickSingleProduct(){
         clickLink("Blue Shoes");
-        return new SingleProductPage(driver);
+        return new ProductDetailsPage(driver);
     }
 
     public StorePage clickStorePageLink(){

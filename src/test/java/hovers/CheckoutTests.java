@@ -1,7 +1,7 @@
 package hovers;
 
 import Pages.CheckoutPage;
-import Pages.SingleProductPage;
+import Pages.ProductDetailsPage;
 import base.BaseTests;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ public class CheckoutTests extends BaseTests {
 
     @Test
     public void testCheckoutAccess(){
-        SingleProductPage singleProductPage = homePage.clickSingleProduct();
+        ProductDetailsPage singleProductPage = homePage.clickSingleProduct();
         singleProductPage.clickAddToCartButton();
         CheckoutPage checkoutPage = singleProductPage.hoversOverCart();
         assertTrue(checkoutPage.getCheckoutAlertText().contains("Your order"),"Incorrect assertion");
