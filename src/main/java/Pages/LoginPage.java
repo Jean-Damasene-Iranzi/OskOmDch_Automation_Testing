@@ -16,7 +16,7 @@ public class LoginPage {
     }
 
     public AccountPages clickLogoutButton(){
-        driver.findElement(logOutButton).click();
-        return new AccountPages(driver);
+         driver.findElement(logOutButton).click();
+         return new AccountPages(driver);
     }
 }
