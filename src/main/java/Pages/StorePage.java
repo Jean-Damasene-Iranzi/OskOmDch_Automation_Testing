@@ -65,6 +65,7 @@ public class StorePage {
     public CartPage clickAddToCartButton(){
         List<WebElement>  addToCart = driver.findElements(By.linkText("ADD TO CART"));
         addToCart.getFirst().click();
+        addToCart.getLast().click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
         wait.until(ExpectedConditions.visibilityOfElementLocated(viewCartLink));
         driver.findElement(viewCartLink).click();

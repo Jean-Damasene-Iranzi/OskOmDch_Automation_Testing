@@ -1,4 +1,4 @@
-package addToCart;
+package cart;
 
 import Pages.CartPage;
 import Pages.StorePage;
@@ -13,6 +13,5 @@ public class AddToCartTests extends BaseTests {
         StorePage storePage = homePage.clickStorePageLink();
         CartPage cartPage = storePage.clickAddToCartButton();
         assertEquals(cartPage.getAddedCartText(),"Anchor Bracelet","Incorrect product added");
-
     }
 }

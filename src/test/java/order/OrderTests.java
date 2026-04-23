@@ -2,7 +2,7 @@ package order;
 
 import Pages.CheckoutPage;
 import Pages.OrderPage;
-import Pages.SingleProductPage;
+import Pages.ProductDetailsPage;
 import base.BaseTests;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import static org.testng.Assert.assertEquals;
 public class OrderTests extends BaseTests {
     @Test
     public void testSuccessfulOrder(){
-        SingleProductPage singleProductPage = homePage.clickSingleProduct();
+        ProductDetailsPage singleProductPage = homePage.clickSingleProduct();
         singleProductPage.clickAddToCartButton();
         CheckoutPage checkoutPage = singleProductPage.hoversOverCart();
         checkoutPage.enterBillingFirstName("NIYIGIRIMBABAZI");
